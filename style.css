@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2d7dd2, #474647);
+    padding: 10px;
+}
+
+
+
+.encriptado {
+
+    max-width: 700px;
+    width: 100%;
+    height: 50vh;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    /* justify-content: center;
+    align-items: center; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.encriptado .titulo {
+    font-size: 1.7rem;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.encriptado .areaTextos {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* Para que los textos se ajusten en pantallas pequeñas */
+    gap: 20px;
+}
+
+#texto_encriptar {
+
+    width: 300px;
+    height: 300px;
+    resize: none;
+    border: 2px solid #2d7dd2;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    /* 
+    width: 100%;  
+    max-width: 300px;
+    height: 200px;
+    
+    */
+}
+#texto_encriptado {
+
+    width: 300px;
+    height: 300px;
+    resize: none;
+    border: 2px solid #2d7dd2;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    /* 
+    width: 100%;  
+    max-width: 300px;
+    height: 200px;
+    
+    */
+}
+
+
+.botones {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    gap: 20px;
+    
+}
+
+#aclaraciones {
+    margin: 8px;
+    gap: 50px;
+}
+
+button {
+    background: linear-gradient(135deg, #2d7dd2, #474647);
+    height: 50px;
+    width: 30%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #464746, #2dd285);
+}
+
+#creditos {
+    margin-top: 10px;
+    /* Espaciado superior */
+    font-size: 1rem;
+    font-style: oblique;
+    color: #333;
+}
+
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .encriptado {
+        height: auto;
+        /* Permite que el contenedor se ajuste en altura */
+        padding: 20px;
+    }
+
+    .encriptado .titulo {
+        font-size: 22px;
+        text-align: center;
+        /* Centrar el texto en pantallas pequeñas */
+    }
+
+    #texto_encriptar,
+    #texto_encriptado {
+        height: 150px;
+        /* Reduce la altura en pantallas pequeñas */
+    }
+
+    .botones {
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+        /* Los botones ocupan el 100% del ancho disponible */
+    }
+}
+
+/* Media Queries para pantallas muy pequeñas (movil) */
+@media (max-width: 480px) {
+    .encriptado {
+        padding: 15px;
+    }
+
+    .encriptado .titulo {
+        font-size: 20px;
+    }
+
+    #texto_encriptar,
+    #texto_encriptado {
+        height: 120px;
+        /* Reduce aún más la altura */
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #creditos {
+        font-size: 12px;
+    }
+}

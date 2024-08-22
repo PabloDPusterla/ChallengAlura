@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="encriptado">
+        <div class="titulo">Encriptador</div>
+        <div class="areaTextos">
+            <textarea name="texto_encriptar" id="texto_encriptar" placeholder="Ingresar texto"></textarea>
+
+            <div>
+                <textarea name="texto_encriptado" id="texto_encriptado"></textarea>
+            </div>
+        </div>
+
+        <div>
+            <p id="aclaraciones">Solo minusculas y sin acento</p>
+        </div>
+            <div class="botones">
+                <button onclick="encriptar();" id="boton_encriptar">Encriptar</button>
+                <button onclick="desencriptar();" id="boton_desencriptar">Desencriptar</button>
+                <button onclick="copiar();" id="boton_copiar">Copiar</button>
+            </div>
+        
+        <div>
+            <p id="creditos">Desarrollado por Pablo Pusterla</p>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
