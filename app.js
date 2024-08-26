@@ -20,12 +20,6 @@ function encriptar() {
   .replace(/o/g, 'ober')
   .replace(/u/g, 'ufat');
   
-  
-  
-  
-
-  
- 
   document.getElementById("texto_encriptado").value = cadena;
 
   limpiarTexBox("texto_encriptar");
